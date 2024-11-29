@@ -30,8 +30,8 @@ CREATE TABLE ProductInventory (
     WarehouseID INT,
     WarehouseAmount INT,
     PRIMARY KEY (ID),
-    FOREIGN KEY (ProductID) REFERENCES Products (ID) ON DELETE NO CASCADE,
-    FOREIGN KEY (WarehouseID) REFERENCES Warehouses (ID) ON DELETE NO CASCADE 
+    FOREIGN KEY (ProductID) REFERENCES Products (ID) ON DELETE CASCADE,
+    FOREIGN KEY (WarehouseID) REFERENCES Warehouses (ID) ON DELETE CASCADE 
 );
 
 
